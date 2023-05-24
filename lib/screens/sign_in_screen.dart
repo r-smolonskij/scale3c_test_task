@@ -58,7 +58,6 @@ class _SignInScreenState extends State<SignInScreen> {
         setState(() {
           isLoading = false;
         });
-        context.read<ProfileInfo>().assignProfile(Auth().currentUser);
         Navigator.push(
           context,
           MaterialPageRoute(

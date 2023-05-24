@@ -60,7 +60,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
           builder: (context) => SignInScreen(),
         ),
       );
-      context.read<ProfileInfo>().removeProfile();
     } on FirebaseAuthException catch (e) {
       print(e);
     }
